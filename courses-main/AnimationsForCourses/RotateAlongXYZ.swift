@@ -34,7 +34,7 @@ struct RotateAlongXYZ: View {
                 .rotationEffect(.degrees(yAxisRotation ? 360 : 0))
 //                    Повернуть элемент по x
                 .rotation3DEffect(
-                    .degrees(90),
+                    .degrees(80),
                     axis: (x: 1.0, y: 0.0, z: 0.0)
                         
                 )
@@ -49,7 +49,6 @@ struct RotateAlongXYZ: View {
                     .degrees(80),
  //                    Повернуть элемент по z
                     axis: (x: 0.0, y: 0.0, z: 1.0)
-                        
                 )
                 .animation(Animation.linear(duration: 1).repeatForever(autoreverses: false))
                 .onAppear{

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE2700B626F4B6E30092D3A6 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2700B526F4B6E30092D3A6 /* SwiftUIView.swift */; };
+		CE2700B926F4C7330092D3A6 /* SwiftUIView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2700B826F4C7330092D3A6 /* SwiftUIView2.swift */; };
 		CE50445426F3734200D8DF15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE50445326F3734200D8DF15 /* AppDelegate.swift */; };
 		CE50445626F3734200D8DF15 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE50445526F3734200D8DF15 /* SceneDelegate.swift */; };
 		CE50445826F3734200D8DF15 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE50445726F3734200D8DF15 /* ContentView.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE2700B526F4B6E30092D3A6 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		CE2700B826F4C7330092D3A6 /* SwiftUIView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView2.swift; sourceTree = "<group>"; };
 		CE50445026F3734200D8DF15 /* anim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = anim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE50445326F3734200D8DF15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE50445526F3734200D8DF15 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 				CE50445E26F3734400D8DF15 /* LaunchScreen.storyboard */,
 				CE50446126F3734400D8DF15 /* Info.plist */,
 				CE50445B26F3734400D8DF15 /* Preview Content */,
+				CE2700B526F4B6E30092D3A6 /* SwiftUIView.swift */,
+				CE2700B826F4C7330092D3A6 /* SwiftUIView2.swift */,
 			);
 			path = anim;
 			sourceTree = "<group>";
@@ -147,6 +153,8 @@
 			files = (
 				CE50445426F3734200D8DF15 /* AppDelegate.swift in Sources */,
 				CE50445626F3734200D8DF15 /* SceneDelegate.swift in Sources */,
+				CE2700B926F4C7330092D3A6 /* SwiftUIView2.swift in Sources */,
+				CE2700B626F4B6E30092D3A6 /* SwiftUIView.swift in Sources */,
 				CE50445826F3734200D8DF15 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

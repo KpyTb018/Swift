@@ -18,12 +18,12 @@ struct ContentView: View {
         })
 //        эффект масшатба
         .scaleEffect(animation ? 2:1,anchor: .center)
-        //.animation(.linear, value: animation)
+        .animation(.linear, value: animation)
 //        линейная анимация
 //        .animation(Animation.linear, value: animation)
         
 //        анимация с определенной продолжительностью (в данном случае анимация будет выполнятся за 3 секунды)
-        .animation(Animation.linear(duration: 3), value: animation)
+//        .animation(Animation.linear(duration: 3), value: animation)
         
 //        анимация с задержкой(в данном случае анимация будет выполнятся спустя 2 секунды после изменения значения переменной animation)
 //        .animation(Animation.linear.delay(2), value: animation)
