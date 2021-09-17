@@ -23,7 +23,7 @@ struct ContentView: View {
 //        .animation(Animation.linear, value: animation)
         
 //        анимация с определенной продолжительностью (в данном случае анимация будет выполнятся за 3 секунды)
-//        .animation(Animation.linear(duration: 3), value: animation)
+        .animation(Animation.linear(duration: 3), value: animation)
         
 //        анимация с задержкой(в данном случае анимация будет выполнятся спустя 2 секунды после изменения значения переменной animation)
 //        .animation(Animation.linear.delay(2), value: animation)
@@ -38,7 +38,7 @@ struct ContentView: View {
 //        .animation(Animation.spring(), value: animation)
         
 //        пружинная анимация с указанной жесткостью и велечиной         сопротивления
-        .animation(Animation.spring(response: 2, dampingFraction: 0.4, blendDuration: 5), value: animation)
+//        .animation(Animation.spring(response: 2, dampingFraction: 0.4, blendDuration: 5), value: animation)
     }
 }
 
