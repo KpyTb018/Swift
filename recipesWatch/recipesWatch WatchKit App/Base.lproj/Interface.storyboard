@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17701" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch44"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17500"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc">
+                    <items>
+                        <imageView alignment="center" verticalAlignment="center" image="logo" id="TSA-CK-u1z"/>
+                        <label alignment="center" verticalAlignment="center" text="CookBook" id="DKr-dE-Vud">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <segue destination="FRH-5B-mqT" kind="relationship" relationship="nextPage" id="BgR-u3-c08"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-26" y="-44"/>
+        </scene>
+        <!--Table Interface Controller-->
+        <scene sceneID="BvN-4d-Tvh">
+            <objects>
+                <controller id="FRH-5B-mqT" customClass="TableInterfaceController" customModule="recipesWatch_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="CEM-pK-Qep">
+                            <items>
+                                <tableRow identifier="row" id="HM0-Go-iXa" customClass="RawTable" customModule="recipesWatch_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="MU1-Tx-0fb">
+                                        <items>
+                                            <imageView width="30" height="30" alignment="left" verticalAlignment="center" image="swift" catalog="system" id="1Ta-Gh-7oQ">
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </imageView>
+                                            <label width="1" widthAdjustment="2" alignment="left" verticalAlignment="center" text="RecName" id="sF9-V9-XNY"/>
+                                        </items>
+                                        <connections>
+                                            <segue destination="nhx-h6-BGq" kind="push" id="fMw-dE-N8y"/>
+                                        </connections>
+                                    </group>
+                                    <connections>
+                                        <outlet property="recipeIcon" destination="1Ta-Gh-7oQ" id="WUn-8C-VcB"/>
+                                        <outlet property="recipeName" destination="sF9-V9-XNY" id="ltJ-uu-KcD"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="CEM-pK-Qep" id="aGX-Oc-mdQ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="201" y="-44"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="wMO-6U-uvr">
+            <objects>
+                <controller id="nhx-h6-BGq">
+                    <items>
+                        <group width="1" alignment="left" id="rT0-dW-JgA">
+                            <items>
+                                <imageView width="24" height="24" alignment="center" verticalAlignment="center" image="swift" catalog="system" id="B95-MW-Njm">
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </imageView>
+                                <label alignment="center" verticalAlignment="center" text="Name" id="XaJ-4F-ZNa"/>
+                            </items>
+                        </group>
+                        <imageView alignment="center" image="book" catalog="system" id="6Xa-UY-OJ0"/>
+                        <group width="1" alignment="left" layout="vertical" id="1Fv-tI-WuC">
+                            <items>
+                                <label alignment="left" text="Автор:" id="g4f-SM-KUi"/>
+                                <label height="20" alignment="left" text="authorName" id="gMG-zg-i1W"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" layout="vertical" id="lAX-1B-y0c">
+                            <items>
+                                <label alignment="left" text="Описание:" id="yKl-qH-GIc"/>
+                                <label height="20" alignment="left" text="recipeText" id="Ayh-nq-dIT"/>
+                            </items>
+                        </group>
+                        <slider width="1" alignment="left" maximum="5" steps="5" minimumImage="star" catalog="system" maximumImage="star.fill" id="Tlg-Cq-igb">
+                            <color key="color" red="0.97254901960784312" green="0.70196078431372544" blue="0.011764705882352941" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                        </slider>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="428.695652173913" y="-44.017857142857146"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="book" catalog="system" width="128" height="104"/>
+        <image name="logo" width="96" height="96"/>
+        <image name="star" catalog="system" width="128" height="115"/>
+        <image name="star.fill" catalog="system" width="128" height="115"/>
+        <image name="swift" catalog="system" width="128" height="103"/>
+    </resources>
+</document>
