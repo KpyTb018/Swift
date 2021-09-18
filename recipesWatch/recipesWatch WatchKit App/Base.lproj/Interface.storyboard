@@ -38,13 +38,11 @@
                                             </imageView>
                                             <label width="1" widthAdjustment="2" alignment="left" verticalAlignment="center" text="RecName" id="sF9-V9-XNY"/>
                                         </items>
-                                        <connections>
-                                            <segue destination="nhx-h6-BGq" kind="push" id="fMw-dE-N8y"/>
-                                        </connections>
                                     </group>
                                     <connections>
                                         <outlet property="recipeIcon" destination="1Ta-Gh-7oQ" id="WUn-8C-VcB"/>
                                         <outlet property="recipeName" destination="sF9-V9-XNY" id="ltJ-uu-KcD"/>
+                                        <segue destination="nhx-h6-BGq" kind="push" id="13C-h8-OOw"/>
                                     </connections>
                                 </tableRow>
                             </items>
@@ -57,10 +55,10 @@
             </objects>
             <point key="canvasLocation" x="201" y="-44"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Detail Recipe-->
         <scene sceneID="wMO-6U-uvr">
             <objects>
-                <controller id="nhx-h6-BGq">
+                <controller id="nhx-h6-BGq" customClass="DetailRecipe" customModule="recipesWatch_WatchKit_Extension">
                     <items>
                         <group width="1" alignment="left" id="rT0-dW-JgA">
                             <items>
@@ -80,16 +78,50 @@
                         <group width="1" alignment="left" layout="vertical" id="lAX-1B-y0c">
                             <items>
                                 <label alignment="left" text="Описание:" id="yKl-qH-GIc"/>
-                                <label height="20" alignment="left" text="recipeText" id="Ayh-nq-dIT"/>
+                                <button alignment="left" id="8MJ-De-v7V">
+                                    <group key="contentGroup" width="1" alignment="left" id="u8T-tI-Svv">
+                                        <items>
+                                            <label alignment="left" text="recipeText" textAlignment="justified" id="Ayh-nq-dIT"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <segue destination="2bi-L6-7x2" kind="modal" id="Gyg-yt-ofp"/>
+                                    </connections>
+                                </button>
                             </items>
                         </group>
                         <slider width="1" alignment="left" maximum="5" steps="5" minimumImage="star" catalog="system" maximumImage="star.fill" id="Tlg-Cq-igb">
                             <color key="color" red="0.97254901960784312" green="0.70196078431372544" blue="0.011764705882352941" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="changeRating:" destination="nhx-h6-BGq" id="CCb-Ei-Enb"/>
+                            </connections>
                         </slider>
                     </items>
+                    <connections>
+                        <outlet property="authorRecipe" destination="gMG-zg-i1W" id="eOc-rP-VZ0"/>
+                        <outlet property="iconRecipe" destination="B95-MW-Njm" id="95O-Oo-1mB"/>
+                        <outlet property="imageRecipe" destination="6Xa-UY-OJ0" id="Ag4-9o-x4D"/>
+                        <outlet property="nameRecipe" destination="XaJ-4F-ZNa" id="kuS-5B-0YG"/>
+                        <outlet property="ratingRecipe" destination="Tlg-Cq-igb" id="R2M-d5-SKN"/>
+                        <outlet property="textRecipe" destination="Ayh-nq-dIT" id="YqD-FE-4Qn"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="428.695652173913" y="-44.017857142857146"/>
+        </scene>
+        <!--Recipe Description-->
+        <scene sceneID="0yR-jg-fXB">
+            <objects>
+                <controller id="2bi-L6-7x2" customClass="RecipeDescription" customModule="recipesWatch_WatchKit_Extension">
+                    <items>
+                        <label width="1" alignment="left" text="recipeText" textAlignment="justified" numberOfLines="0" id="96k-k6-NOW"/>
+                    </items>
+                    <connections>
+                        <outlet property="fullRecipe" destination="96k-k6-NOW" id="jO1-9a-SbA"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="647" y="-44"/>
         </scene>
     </scenes>
     <resources>

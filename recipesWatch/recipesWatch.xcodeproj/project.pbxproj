@@ -17,6 +17,8 @@
 		CEA61BD726F5BE9F000E28F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA61BD626F5BE9F000E28F6 /* Assets.xcassets */; };
 		CEA61BF326F5EDC0000E28F6 /* recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA61BEF26F5E517000E28F6 /* recipe.swift */; };
 		CEA61BF826F6010B000E28F6 /* RawTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA61BF726F6010B000E28F6 /* RawTable.swift */; };
+		CEA61C0226F60D20000E28F6 /* DetailRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA61C0126F60D20000E28F6 /* DetailRecipe.swift */; };
+		CEA61C0726F61489000E28F6 /* RecipeDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA61C0626F61489000E28F6 /* RecipeDescription.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,8 @@
 		CEA61BD826F5BE9F000E28F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEA61BEF26F5E517000E28F6 /* recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recipe.swift; sourceTree = "<group>"; };
 		CEA61BF726F6010B000E28F6 /* RawTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawTable.swift; sourceTree = "<group>"; };
+		CEA61C0126F60D20000E28F6 /* DetailRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecipe.swift; sourceTree = "<group>"; };
+		CEA61C0626F61489000E28F6 /* RecipeDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDescription.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +124,8 @@
 		CEA61BCF26F5BE9F000E28F6 /* recipesWatch WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				CEA61C0626F61489000E28F6 /* RecipeDescription.swift */,
+				CEA61C0126F60D20000E28F6 /* DetailRecipe.swift */,
 				CEA61BEF26F5E517000E28F6 /* recipe.swift */,
 				CEA61BD026F5BE9F000E28F6 /* TableInterfaceController.swift */,
 				CEA61BF726F6010B000E28F6 /* RawTable.swift */,
@@ -257,8 +263,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA61C0226F60D20000E28F6 /* DetailRecipe.swift in Sources */,
 				CEA61BF826F6010B000E28F6 /* RawTable.swift in Sources */,
 				CEA61BD326F5BE9F000E28F6 /* ExtensionDelegate.swift in Sources */,
+				CEA61C0726F61489000E28F6 /* RecipeDescription.swift in Sources */,
 				CEA61BD126F5BE9F000E28F6 /* TableInterfaceController.swift in Sources */,
 				CEA61BD526F5BE9F000E28F6 /* ComplicationController.swift in Sources */,
 				CEA61BF326F5EDC0000E28F6 /* recipe.swift in Sources */,
